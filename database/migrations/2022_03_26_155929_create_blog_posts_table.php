@@ -17,8 +17,8 @@ class CreateBlogPostsTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->string('title');
-            $table->string('content');
+            $table->string('title')->default('');
+            $table->string('content')->default('');
         });
     } 
 

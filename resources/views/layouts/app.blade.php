@@ -15,7 +15,7 @@
 
         <nav class="my-2 my-md-0 mr-md-3">
             <a href="{{ route('home.index') }}" class="p-2 text-dark">Home</a>
-            <a href="#" class="p-2">Contact</a>
+            <a href="{{ route('home.contact') }}" class="p-2">Contact</a>
             <a href="{{ route('posts.index') }}" class="p-2">Blog posts</a>
             <a href="{{ route('posts.create') }}" class="p-2">Add post</a>
         </nav>

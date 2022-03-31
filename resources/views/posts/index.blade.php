@@ -4,10 +4,14 @@
 
 @section('content')
 
-    @foreach($posts as $post)
+    @if( !$posts->isEmpty() )
+        @foreach($posts as $post)
 
-        @include('posts.partials.post')
+            @include('posts.partials.post')
 
-    @endforeach
+        @endforeach
+    @else
+        <h2 class="alert alert-info">No blog posts yet</h2>
+    @endif
 
 @endsection('content')
